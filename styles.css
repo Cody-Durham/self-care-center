@@ -1,8 +1,23 @@
-/* font-family: 'Quicksand', sans-serif;
-COLORS
+font-family: 'Quicksand', sans-serif;
+
+body {
+background-color: #f7e4bf;
+}
+
+
+#header {
+  color: red;
+}
+
+#message-display {
+  color: red;
+}
+
+
+
+/* COLORS
 light-yellow - #f7e4bf;
 light-blue - #78a7c6;
 dark-blue - #134d71;
 white - #ffffff;
-black - #000000;
-*/
+black - #000000; */
