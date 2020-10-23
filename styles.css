@@ -16,13 +16,21 @@ height: 100%;
 background: linear-gradient(#134d71, #78a7c6, #f7e4bf);
 background-repeat: no-repeat;
 text-align: center;
-border: 2px solid pink
+}
+
+.homePage-text1 {
+  color: white;
+  padding-top: 35px;
+}
+
+.homePage-text2 {
+  color: white;
+  padding-top: 70px;
 }
 
 form {
-  /* display: flex; */
-  /* align-items: center; */
-  /* justify-content: center; */
+
+  border-radius: 7px;
   background: white;
   width: 50%;
   height: 40%%;
@@ -30,17 +38,34 @@ form {
   margin-right: 25%;
   padding-top: 1%;
   padding-bottom: 1%;
-}
-
-.homePage-text {
-  color: white;
+  border: 2px solid red;
 }
 
 .receive-message {
+  border-radius: 5px;
+  /* padding: .75% 5% .75% 3% */
+  margin-top: 3%;
   padding-top: .75%;
   padding-bottom: .75%;
-  padding-right: 3%;
-  padding-left: 3%;
+  padding-right: 5%;
+  padding-left: 5%;
+
+  font-size: 14px;
   background: #134d71;
   color: #ffffff;
+}
+
+#left-radio {
+font-style: italic;
+/* border: 2px solid red; */
+/* margin-top: 40px; */
+margin-right: 100px;
+padding-right: 50px;
+
+}
+
+#right-radio {
+  font-style: italic;
+  /* border: 2px solid blue; */
+  /* margin-left: 100px */
 }
