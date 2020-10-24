@@ -52,8 +52,9 @@ getNewMessage.addEventListener('click', getMessage);
 
 
 //functions here 👇🏽
-
-
+function randomizer(quotes) {
+  return Math.floor(Math.random() * quotes.length);
+};
 
 function getMessage() {
   event.preventDefault();
