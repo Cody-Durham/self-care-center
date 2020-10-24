@@ -1,23 +1,71 @@
-font-family: 'Quicksand', sans-serif;
-
-body {
-background-color: #f7e4bf;
-}
-
-
-#header {
-  color: red;
-}
-
-#message-display {
-  color: red;
-}
-
-
-
+/* font-family: 'Quicksand', sans-serif; */
 /* COLORS
 light-yellow - #f7e4bf;
 light-blue - #78a7c6;
 dark-blue - #134d71;
 white - #ffffff;
 black - #000000; */
+
+html {
+  height: 100%
+}
+
+body {
+font-family: 'Quicksand', sans-serif;
+height: 100%;
+background: linear-gradient(#134d71, #78a7c6, #f7e4bf);
+background-repeat: no-repeat;
+text-align: center;
+}
+
+.homePage-text1 {
+  color: white;
+  padding-top: 35px;
+}
+
+.homePage-text2 {
+  color: white;
+  padding-top: 70px;
+}
+
+form {
+
+  border-radius: 7px;
+  background: white;
+  width: 50%;
+  height: 40%%;
+  margin-left: 25%;
+  margin-right: 25%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  border: 2px solid red;
+}
+
+.receive-message {
+  border-radius: 5px;
+  /* padding: .75% 5% .75% 3% */
+  margin-top: 3%;
+  padding-top: .75%;
+  padding-bottom: .75%;
+  padding-right: 5%;
+  padding-left: 5%;
+
+  font-size: 14px;
+  background: #134d71;
+  color: #ffffff;
+}
+
+#left-radio {
+font-style: italic;
+/* border: 2px solid red; */
+/* margin-top: 40px; */
+margin-right: 100px;
+padding-right: 50px;
+
+}
+
+#right-radio {
+  font-style: italic;
+  /* border: 2px solid blue; */
+  /* margin-left: 100px */
+}
