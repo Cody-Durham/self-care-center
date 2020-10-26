@@ -77,7 +77,19 @@ text-align: center;
   /* border: 2px solid red; */
 }
 
-.receive-message-button {
+.message-button {
+  border-radius: 5px;
+  margin-top: 3%;
+  padding-top: .75%;
+  padding-bottom: .75%;
+  padding-right: 5%;
+  padding-left: 5%;
+  font-size: 14px;
+  background: #134d71;
+  color: #ffffff;
+}
+
+.clear-message-button {
   border-radius: 5px;
   margin-top: 3%;
   padding-top: .75%;
