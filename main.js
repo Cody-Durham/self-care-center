@@ -54,12 +54,13 @@ function randomizer(array) {
 
 function getMessage() {
   event.preventDefault();
-  meditateIcon.classList.add('hidden')
 
   if (affirmationButtonTarget.checked === true) {
     returnMessage.innerText = randomizer(affirmation)
+    meditateIcon.classList.add('hidden')
   }
   if (mantraButtonTarget.checked === true) {
     returnMessage.innerText = randomizer(mantra)
+    meditateIcon.classList.add('hidden')
   }
 };
