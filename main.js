@@ -31,24 +31,20 @@ var affirmation = [
     '"I manifest perfect health by making smart choices."',
   ];
 
-//targets here 👇🏽
+
 var meditateIcon = document.querySelector('.meditate-icon');
 var returnMessage = document.querySelector('#return-quote');
 var affirmationButtonTarget = document.querySelector('#affirmation-button');
 var mantraButtonTarget = document.querySelector('#mantra-button');
+var clearMessage = document.querySelector('.clear-message-button');
 
 
-//buttons here 👇🏽
-var getNewMessage = document.querySelector('.receive-message-button');
-var noMessageAlert = document.querySelector('.receive-message-button');
+getNewMessage = document.querySelector('.message-button');
 
-//event listeners here 👇🏽
+
 getNewMessage.addEventListener('click', getMessage);
-//run this if runction errorMessage() needs to run.
-// noMessageAlert.addEventListener('click', errorMessage);
 
 
-//functions here 👇🏽
 function randomizer(array) {
   return array[Math.floor(Math.random() * array.length)]
 };
@@ -56,23 +52,16 @@ function randomizer(array) {
 function getMessage() {
   event.preventDefault();
 
+  if (affirmationButtonTarget.checked === false && mantraButtonTarget.checked === false) {
+    return alert('somthing')
+  }
   if (affirmationButtonTarget.checked === true) {
     returnMessage.innerText = randomizer(affirmation)
-    meditateIcon.classList.add('hidden')
-  }
-  else if (mantraButtonTarget.checked === true) {
-    returnMessage.innerText = randomizer(mantra)
-    meditateIcon.classList.add('hidden')
-  } else {
-    alert('Check one of the boxes below to get your inspirational quote!');
-    // errorMessage()
-  }
-};
+  };
 
-// function errorMessage() {
-//   noMessageAlert = noMessageAlert.innerText = 'Choose you personal affirmation or mantra message first!';
-//   if (affirmationButtonTarget.checked === true || mantraButtonTarget.checked === true) {
-//     console.log('testing')
-//     noMessageAlert = noMessageAlert.innerText = 'asdfasdfasd!'
-//   }
-// };
+  if (mantraButtonTarget.checked === true) {
+    returnMessage.innerText = randomizer(mantra)
+  };
+    clearMessage.classList.remove('hidden');
+    meditateIcon.classList.add('hidden');
+};
