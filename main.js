@@ -34,17 +34,18 @@ var affirmation = [
 //targets here 👇🏽
 var meditateIcon = document.querySelector('.meditate-icon');
 var returnMessage = document.querySelector('#return-quote');
-
 var affirmationButtonTarget = document.querySelector('#affirmation-button');
 var mantraButtonTarget = document.querySelector('#mantra-button');
 
 
-
 //buttons here 👇🏽
 var getNewMessage = document.querySelector('.receive-message-button');
+var noMessageAlert = document.querySelector('.receive-message-button');
 
 //event listeners here 👇🏽
 getNewMessage.addEventListener('click', getMessage);
+//run this if runction errorMessage() needs to run.
+// noMessageAlert.addEventListener('click', errorMessage);
 
 
 //functions here 👇🏽
@@ -59,8 +60,19 @@ function getMessage() {
     returnMessage.innerText = randomizer(affirmation)
     meditateIcon.classList.add('hidden')
   }
-  if (mantraButtonTarget.checked === true) {
+  else if (mantraButtonTarget.checked === true) {
     returnMessage.innerText = randomizer(mantra)
     meditateIcon.classList.add('hidden')
+  } else {
+    alert('Check one of the boxes below to get your inspirational quote!');
+    // errorMessage()
   }
 };
+
+// function errorMessage() {
+//   noMessageAlert = noMessageAlert.innerText = 'Choose you personal affirmation or mantra message first!';
+//   if (affirmationButtonTarget.checked === true || mantraButtonTarget.checked === true) {
+//     console.log('testing')
+//     noMessageAlert = noMessageAlert.innerText = 'asdfasdfasd!'
+//   }
+// };
