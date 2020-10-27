@@ -37,9 +37,7 @@ var returnMessage = document.querySelector('#return-quote');
 var affirmationButtonTarget = document.querySelector('#affirmation-button');
 var mantraButtonTarget = document.querySelector('#mantra-button');
 var clearMessage = document.querySelector('.clear-message-button');
-
-
-getNewMessage = document.querySelector('.message-button');
+var getNewMessage = document.querySelector('.message-button');
 
 
 getNewMessage.addEventListener('click', getMessage);
@@ -58,7 +56,6 @@ function getMessage() {
   if (affirmationButtonTarget.checked === true) {
     returnMessage.innerText = randomizer(affirmation)
   };
-
   if (mantraButtonTarget.checked === true) {
     returnMessage.innerText = randomizer(mantra)
   };
